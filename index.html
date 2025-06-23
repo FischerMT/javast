@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Javast React</title>
 </head>
 <body>
-    <h1>RAT!</h1>
-    <p>Jeg hedder kiel og jeg er homo.</p>
-    
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function App() {
+            return (
+                <div>
+                    <h1>RAT!</h1>
+                    <p>Jeg hedder kiel og jeg er homo.</p>
+                </div>
+            );
+        }
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
 </body>
 </html>
