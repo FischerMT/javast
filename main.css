@@ -13,8 +13,10 @@
 }
 
 body {
-codex/create-one-page-homepage-for-javast.dk
+  max-width: 800px;
   margin: 0;
+  background: url("https://via.placeholder.com/1600x400") center/cover no-repeat;
+  color: var(--color-bg);
   font-family: var(--font-family);
   color: var(--color-text);
   background: var(--color-bg);
