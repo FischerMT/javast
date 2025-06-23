@@ -1,17 +1,11 @@
 {
   "name": "javast",
   "version": "1.0.0",
-  "description": "Dette er javast hjemmesiden. Siden er nu implementeret i React ved brug af en simpel CDN-baseret opsætning.",
-  "main": "index.js",
+  "description": "En simpel one-page hjemmeside for Javast.dk lavet med HTML og CSS.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
-  }
+  "license": "ISC"
 }

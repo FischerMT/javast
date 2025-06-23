@@ -1,13 +1,7 @@
-# javast
-Dette er javast hjemmesiden.
-Siden er nu implementeret i React ved brug af en simpel CDN-baseret opsætning.
+# Javast
 
-## Installation
+Dette repo indeholder en simpel placeholder-hjemmeside for **Javast.dk**. Alle sider er lavet i ren HTML og CSS og kan åbnes direkte i en browser.
 
-Klon projektet og kør derefter:
+## Brug
 
-```bash
-npm install
-```
-
-Det installerer `react` og `react-dom` som lokale afhængigheder. Mappen `node_modules` er udeladt fra versionskontrol via `.gitignore`.
+Åbn `index.html` for forsiden. Fra den kan du besøge `priser.html`, `cases.html`, `om-mig.html` og `kontakt.html`.
