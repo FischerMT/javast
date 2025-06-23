@@ -3,36 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>Javast</title>
+    <title>Javast.dk</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="root"></div>
+    <nav class="navbar">
+        <div class="logo">Javast</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="#services">Ydelser</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="pricing.html">Priser</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
 
-    <script type="text/babel">
-        function App() {
-            return (
-                <div className="container">
-                    <header className="hero">
-                        <h1>Velkommen til Javast</h1>
-                        <p>Din online kaffedestination</p>
-                        <a href="#" className="btn">Se sortiment</a>
-                    </header>
-                    <section className="features">
-                        <h2>Hvorfor vælge os?</h2>
-                        <ul>
-                            <li>Friskristede bønner</li>
-                            <li>Hurtig levering</li>
-                            <li>Abonnementsløsninger</li>
-                        </ul>
-                    </section>
-                </div>
-            );
-        }
-        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Front-end udvikler</h1>
+        </div>
+    </header>
+
+    <section id="about" class="content">
+        <h2>Om mig</h2>
+        <p>Jeg hjælper virksomheder med at bygge moderne og brugervenlige hjemmesider. Med fokus på hastighed og design skaber jeg løsninger der fungerer på tværs af enheder.</p>
+    </section>
+
+    <section id="services" class="content services">
+        <h2>Ydelser</h2>
+        <div class="service-item">
+            <h3>Responsivt webdesign</h3>
+            <p>Design og udvikling af hjemmesider der ser godt ud på både mobil og desktop.</p>
+        </div>
+        <div class="service-item">
+            <h3>Single-page applikationer</h3>
+            <p>Skalerbare front-end løsninger med de nyeste teknologier.</p>
+        </div>
+        <div class="service-item">
+            <h3>Vedligeholdelse</h3>
+            <p>Løbende support og optimering af eksisterende sites.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Kontakt</h2>
+        <form>
+            <input type="text" name="name" placeholder="Navn" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="4" placeholder="Besked" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Adresse: Eksempelvej 1, 1234 København</p>
+        <p>Email: info@javast.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
     </script>
 </body>
 </html>
