@@ -9,35 +9,33 @@
 <body>
 <header class="header">
     <div class="container nav-container">
-        <a href="index.html" class="logo">Javast.dk</a>
+        <a href="#hero" class="logo">Javast.dk</a>
         <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Forside</a></li>
-            <li class="nav-item"><a href="priser.html">Priser</a></li>
-            <li class="nav-item"><a href="cases.html">Cases</a></li>
-            <li class="nav-item"><a href="om-mig.html">Om mig</a></li>
-            <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-item"><a href="#about">Om os</a></li>
+            <li class="nav-item"><a href="#services">Ydelser</a></li>
+            <li class="nav-item"><a href="#contact">Kontakt</a></li>
         </ul>
     </div>
 </header>
 
 <main>
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <h1 class="hero-title">Velkommen til Javast.dk</h1>
             <p>Front-end udvikling uden bøvl</p>
             <a href="priser.html" class="btn">Se priser</a>
-            <a href="om-mig.html" class="btn">Om mig</a>
+            <a href="cases.html" class="btn">Se cases</a>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">Om os</h2>
             <p>Jeg hjælper virksomheder med at bygge moderne og brugervenlige hjemmesider. Fokus er hastighed, tilgængelighed og samarbejde.</p>
         </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="section-title">Ydelser</h2>
             <div class="cards-container">
@@ -56,6 +54,22 @@
             </div>
         </div>
     </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <h2 class="section-title">Kontakt mig</h2>
+            <p>Send en besked, så vender jeg tilbage hurtigst muligt.</p>
+            <form class="contact-form">
+                <label for="name">Navn</label>
+                <input id="name" type="text" name="name" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+                <label for="message">Besked</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send besked</button>
+            </form>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">
@@ -69,7 +83,6 @@
             <h3>Genveje</h3>
             <a href="priser.html">Priser</a>
             <a href="cases.html">Cases</a>
-            <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
 </footer>

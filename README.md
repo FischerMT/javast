@@ -4,4 +4,4 @@ Dette repo indeholder en simpel placeholder-hjemmeside for **Javast.dk**. Alle s
 
 ## Brug
 
-Åbn `index.html` for forsiden. Fra den kan du besøge `priser.html`, `cases.html`, `om-mig.html` og `kontakt.html`.
+Åbn `index.html` for landing-siden. Navigationsmenuen linker til afsnittene **Om os**, **Ydelser** og **Kontakt** på samme side. Fra heroen kan du gå videre til `priser.html` og `cases.html` for at se priser og tidligere arbejde.
