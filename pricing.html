@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priser - Javast</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Javast</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="index.html#about">Om mig</a></li>
+            <li><a href="index.html#services">Ydelser</a></li>
+            <li><a href="cases.html">Cases</a></li>
+            <li><a href="pricing.html">Priser</a></li>
+            <li><a href="index.html#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Priser</h1>
+        </div>
+    </header>
+
+    <section class="content pricing">
+        <div class="plan">
+            <h3>Basis</h3>
+            <p>Enkel landing page</p>
+            <p class="price">2.500 DKK</p>
+        </div>
+        <div class="plan">
+            <h3>Professionel</h3>
+            <p>Komplet website med flere sider</p>
+            <p class="price">7.500 DKK</p>
+        </div>
+        <div class="plan">
+            <h3>Enterprise</h3>
+            <p>Skræddersyede løsninger og support</p>
+            <p class="price">Kontakt for pris</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Adresse: Eksempelvej 1, 1234 København</p>
+        <p>Email: info@javast.dk</p>
+        <p>Telefon: +45 12 34 56 78</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('menu-toggle').checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
