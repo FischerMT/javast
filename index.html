@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>Javast React</title>
+    <title>Javast</title>
 </head>
 <body>
     <div id="root"></div>
@@ -15,9 +15,20 @@
     <script type="text/babel">
         function App() {
             return (
-                <div>
-                    <h1>RAT!</h1>
-                    <p>Jeg hedder kiel og jeg er homo.</p>
+                <div className="container">
+                    <header className="hero">
+                        <h1>Velkommen til Javast</h1>
+                        <p>Din online kaffedestination</p>
+                        <a href="#" className="btn">Se sortiment</a>
+                    </header>
+                    <section className="features">
+                        <h2>Hvorfor vælge os?</h2>
+                        <ul>
+                            <li>Friskristede bønner</li>
+                            <li>Hurtig levering</li>
+                            <li>Abonnementsløsninger</li>
+                        </ul>
+                    </section>
                 </div>
             );
         }
