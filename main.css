@@ -13,7 +13,6 @@
 }
 
 body {
-codex/create-one-page-homepage-for-javast.dk
   margin: 0;
   font-family: var(--font-family);
   color: var(--color-text);
@@ -23,6 +22,7 @@ codex/create-one-page-homepage-for-javast.dk
 
 .container {
   width: 90%;
+  max-width: 800px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -66,6 +66,8 @@ codex/create-one-page-homepage-for-javast.dk
 .hero {
   text-align: center;
   padding: calc(var(--space-lg) * 2) 0;
+  background: url("https://via.placeholder.com/1600x400") center/cover no-repeat;
+  color: var(--color-bg);
 }
 
 .hero-title {
@@ -172,6 +174,29 @@ section {
   display: flex;
   align-items: center;
   gap: var(--space-lg);
+}
+
+.about-photo {
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+.about-text ul {
+  padding-left: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+=======
 }
 
 .about-photo {
@@ -349,5 +374,4 @@ footer {
     text-align: center;
     padding: 20px 0;
     border-top: 1px solid #ddd;
- master
 }

@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-codex/create-one-page-homepage-for-javast.dk
+<header class="header">
+    <div class="container nav-container">
+        <a href="#hero" class="logo">Javast.dk</a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about">Om os</a></li>
+            <li class="nav-item"><a href="#services">Ydelser</a></li>
+            <li class="nav-item"><a href="#contact">Kontakt</a></li>
 <header class="header">
     <div class="container nav-container">
         <a href="index.html" class="logo">Javast.dk</a>
@@ -22,11 +28,18 @@ codex/create-one-page-homepage-for-javast.dk
 </header>
 
 <main>
+    <section id="hero" class="hero">
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Velkommen til Javast.dk</h1>
             <p>Front-end udvikling uden bøvl</p>
             <a href="priser.html" class="btn">Se priser</a>
+            <a href="cases.html" class="btn">Se cases</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+
             <a href="om-mig.html" class="btn">Om mig</a>
         </div>
     </section>
@@ -38,6 +51,7 @@ codex/create-one-page-homepage-for-javast.dk
         </div>
     </section>
 
+    <section id="services" class="services">
     <section class="services">
         <div class="container">
             <h2 class="section-title">Ydelser</h2>
@@ -51,10 +65,32 @@ codex/create-one-page-homepage-for-javast.dk
                     <p>Ingen skjulte abonnementer, bare fair priser.</p>
                 </div>
                 <div class="card">
+                </div>
+                <div class="card">
+                    <h3>Support</h3>
+                    <p>Ingen skjulte abonnementer, bare fair priser.</p>
+                </div>
+                <div class="card">
                     <h3>Rådgivning</h3>
                     <p>Få klar besked om de bedste løsninger for dit projekt.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <h2 class="section-title">Kontakt mig</h2>
+            <p>Send en besked, så vender jeg tilbage hurtigst muligt.</p>
+            <form class="contact-form">
+                <label for="name">Navn</label>
+                <input id="name" type="text" name="name" required>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required>
+                <label for="message">Besked</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send besked</button>
+            </form>
         </div>
     </section>
 </main>
@@ -70,11 +106,13 @@ codex/create-one-page-homepage-for-javast.dk
             <h3>Genveje</h3>
             <a href="priser.html">Priser</a>
             <a href="cases.html">Cases</a>
+        </div>
+    </div>
+</footer>
             <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
 </footer>
-=======
     <nav class="navbar">
         <div class="logo">Javast</div>
         <input type="checkbox" id="menu-toggle">
@@ -138,6 +176,5 @@ codex/create-one-page-homepage-for-javast.dk
             });
         });
     </script>
-master
 </body>
 </html>
