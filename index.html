@@ -9,13 +9,6 @@
 <body>
 <header class="header">
     <div class="container nav-container">
-        <a href="#hero" class="logo">Javast.dk</a>
-        <ul class="nav-list">
-            <li class="nav-item"><a href="#about">Om os</a></li>
-            <li class="nav-item"><a href="#services">Ydelser</a></li>
-            <li class="nav-item"><a href="#contact">Kontakt</a></li>
-<header class="header">
-    <div class="container nav-container">
         <a href="index.html" class="logo">Javast.dk</a>
         <ul class="nav-list">
             <li class="nav-item"><a href="index.html">Forside</a></li>
@@ -28,7 +21,6 @@
 </header>
 
 <main>
-    <section id="hero" class="hero">
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Velkommen til Javast.dk</h1>
@@ -39,32 +31,20 @@
     </section>
 
     <section id="about" class="about">
-
+        <div class="container">
+            <h2 class="section-title">Om os</h2>
+            <p>Jeg hjælper virksomheder med at bygge moderne og brugervenlige hjemmesider. Fokus er hastighed, tilgængelighed og samarbejde.</p>
             <a href="om-mig.html" class="btn">Om mig</a>
         </div>
     </section>
 
-    <section class="about">
-        <div class="container">
-            <h2 class="section-title">Om os</h2>
-            <p>Jeg hjælper virksomheder med at bygge moderne og brugervenlige hjemmesider. Fokus er hastighed, tilgængelighed og samarbejde.</p>
-        </div>
-    </section>
-
     <section id="services" class="services">
-    <section class="services">
         <div class="container">
             <h2 class="section-title">Ydelser</h2>
             <div class="cards-container">
                 <div class="card">
                     <h3>Webdesign</h3>
                     <p>Responsiv hjemmeside med fokus på performance.</p>
-                </div>
-                <div class="card">
-                    <h3>Support</h3>
-                    <p>Ingen skjulte abonnementer, bare fair priser.</p>
-                </div>
-                <div class="card">
                 </div>
                 <div class="card">
                     <h3>Support</h3>
@@ -106,75 +86,9 @@
             <h3>Genveje</h3>
             <a href="priser.html">Priser</a>
             <a href="cases.html">Cases</a>
-        </div>
-    </div>
-</footer>
             <a href="kontakt.html">Kontakt</a>
         </div>
     </div>
 </footer>
-    <nav class="navbar">
-        <div class="logo">Javast</div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="nav-links">
-            <li><a href="#about">Om mig</a></li>
-            <li><a href="#services">Ydelser</a></li>
-            <li><a href="cases.html">Cases</a></li>
-            <li><a href="pricing.html">Priser</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Front-end udvikler</h1>
-        </div>
-    </header>
-
-    <section id="about" class="content">
-        <h2>Om mig</h2>
-        <p>Jeg hjælper virksomheder med at bygge moderne og brugervenlige hjemmesider. Med fokus på hastighed og design skaber jeg løsninger der fungerer på tværs af enheder.</p>
-    </section>
-
-    <section id="services" class="content services">
-        <h2>Ydelser</h2>
-        <div class="service-item">
-            <h3>Responsivt webdesign</h3>
-            <p>Design og udvikling af hjemmesider der ser godt ud på både mobil og desktop.</p>
-        </div>
-        <div class="service-item">
-            <h3>Single-page applikationer</h3>
-            <p>Skalerbare front-end løsninger med de nyeste teknologier.</p>
-        </div>
-        <div class="service-item">
-            <h3>Vedligeholdelse</h3>
-            <p>Løbende support og optimering af eksisterende sites.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="content">
-        <h2>Kontakt</h2>
-        <form>
-            <input type="text" name="name" placeholder="Navn" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" rows="4" placeholder="Besked" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Adresse: Eksempelvej 1, 1234 København</p>
-        <p>Email: info@javast.dk</p>
-        <p>Telefon: +45 12 34 56 78</p>
-    </footer>
-
-    <script>
-        document.querySelectorAll('.nav-links a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                document.getElementById('menu-toggle').checked = false;
-            });
-        });
-    </script>
 </body>
 </html>
